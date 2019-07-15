@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>เพิ่มชื่อกองและสัดส่วนเงิน</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>ชื่อกอง</ion-label>
+    <ion-input type="text" placeholder="ชื่อกองเงิน"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>ยอดคงเหลือ</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="text" placeholder="กรุณาใส่ยอดเงินที่ต้องการ"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button (click)="onClick()">
+        <ion-icon name="checkmark" class="ion-padding"></ion-icon>
+    </ion-button>
+    <ion-button (click)="onClick()">
+        <ion-icon name="close" class="ion-padding"></ion-icon>
+      </ion-button>
+  </ion-item>
+
+</ion-content>
