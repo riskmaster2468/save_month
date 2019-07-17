@@ -1,14 +1,30 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
     <ion-title>dashboard</ion-title>
-    <ion-button slot="End" (click)="onClick()">
-      <ion-icon slot="icon-only" name="add"></ion-icon>
-    </ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+  <!-- Graph -->
   <div id="chartdiv"></div>
+  <!-- input salary -->
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="4"></ion-col>
+      <ion-col size="4">
+        <ion-item expand="block">
+          <p>
+            รายรับ ต่อเดือน : {{data_Salary[0].messege}} <!--{{data_Salary[0].messege}},25,000-->
+          </p>
+        </ion-item>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+    </ion-row>
+  </ion-grid>
+
   <ion-grid>
     <ion-row>
       <ion-col size="6" *ngFor="let item of card_arr">
